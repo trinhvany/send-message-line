@@ -30,8 +30,6 @@ func StartPublisher() {
 	}
 
 	fmt.Println("📦 Queue URL:", url)
-	fmt.Println("message", messages)
-
 	for _,message := range messages {
 		fmt.Println(message);
 		details, errDetail := rdsClient.GetMessageDetail(message.ID)
@@ -41,7 +39,6 @@ func StartPublisher() {
 		var detailList []map[string]interface{}
 
 		for _, detail := range details {
-			fmt.Println("Details: ", detail.ID)
 			var obj map[string]interface{}
 			err := json.Unmarshal([]byte(detail.ContentJson), &obj)
 			if err != nil {
