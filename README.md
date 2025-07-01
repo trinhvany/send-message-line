@@ -23,7 +23,7 @@ Hệ thống này gồm 2 thành phần:
 ├── cmd/
 │   ├── main.go
 │
-├── internal/
+├── client/
 │   ├── rds/
 │   │   ├── client.go
 │   │   ├── message.go
@@ -67,7 +67,7 @@ docker compose up -d
 ```
 
 2. **Tạo RDS**
-![Database Schema](![alt text](image.png))
+![Database Schema](image.png)
 
 3. **Cài gói cần thiết**
 ```base
