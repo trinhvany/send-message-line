@@ -67,7 +67,7 @@ docker compose up -d
 ```
 
 2. **Tạo RDS**
-(image.png)
+![Database Schema](![alt text](image.png))
 
 3. **Cài gói cần thiết**
 ```base
