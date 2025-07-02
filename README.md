@@ -75,13 +75,13 @@ docker compose up -d
 go mod tidy
 ```
 
-4. Thêm persional data ở const.go
+4. **Thêm persional data ở const.go**
 ```base
 	UserIDFake = "" // "UserID1, UserID2, ..."
 	Secret_key = "" // Channel secret key
 ```
 
-4. **Run source**
+5. **Run source**
 ```base
 go run cmd/main.go
 ```
