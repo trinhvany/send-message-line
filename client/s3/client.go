@@ -66,7 +66,6 @@ func PutObject(bucket string, key string, content []byte) error {
 	return nil
 }
 
-// GetObject đọc nội dung từ 1 object trong S3 (dạng []byte)
 func GetObject(bucket string, key string) ([]byte, error) {
 	cli := GetClient()
 

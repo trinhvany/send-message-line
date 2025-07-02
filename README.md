@@ -1,6 +1,6 @@
 # 📬 Message System: Publisher & Subscriber (Golang + SQS + S3 + Redis + RDS)
 
-## 🧩 Mục tiêu
+## 🧩 Tổng quan
 
 Hệ thống này gồm 2 thành phần:
 
@@ -74,7 +74,13 @@ docker compose up -d
 go mod tidy
 ```
 
-3. **Run source**
+4. Thêm persional data ở const.go
+```base
+	UserIDFake = "" // "UserID1, UserID2, ..."
+	Secret_key = "" // Channel secret key
+```
+
+4. **Run source**
 ```base
 go run cmd/main.go
 ```

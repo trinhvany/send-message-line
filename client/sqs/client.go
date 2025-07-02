@@ -21,7 +21,7 @@ func Init() {
 		config.WithEndpointResolverWithOptions(
 			aws.EndpointResolverWithOptionsFunc(func(service, region string, _ ...interface{}) (aws.Endpoint, error) {
 				return aws.Endpoint{
-					URL:           "http://localhost:9324", // ElasticMQ local
+					URL:           "http://localhost:9324",
 					SigningRegion: "us-east-1",
 				}, nil
 			}),
