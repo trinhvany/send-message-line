@@ -79,6 +79,10 @@ go mod tidy
 ```base
 	UserIDFake = "" // "UserID1, UserID2, ..."
 	Secret_key = "" // Channel secret key
+	Account = ""
+	Password = ""
+	IP = ""
+	Port = ""
 ```
 
 5. **Run source**

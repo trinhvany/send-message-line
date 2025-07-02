@@ -1,9 +1,10 @@
 package rds
 
 import (
+	"small_demo_go/model"
+	"small_demo_go/system"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
-	"small_demo_go/model"
 )
 
 type Client interface {
@@ -17,7 +18,7 @@ type client struct {
 }
 
 func NewClient() (Client, error) {
-	dsn := "dialog:password123!@tcp(192.168.68.164:3306)/send_message?parseTime=True&loc=Local"
+	dsn := system.Account + ":" + system.Password + "@tcp(" + system.IP + ":" + system.Port + ")/" + system.Schema +"?parseTime=True&loc=Local"
 	db, err := gorm.Open(mysql.Open(dsn), &gorm.Config{})
 
 	if err != nil {

@@ -18,3 +18,11 @@ const (
 	UserIDFake = "" // "UserID1, UserID2, ..."
 	Secret_key = "" // Channel secret key
 )
+
+const (
+	Account = ""
+	Password = ""
+	IP = ""
+	Port = ""
+	Schema = "send_message"
+)
